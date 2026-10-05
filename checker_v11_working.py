@@ -118,7 +118,7 @@ if not url.startswith(("http://", "https://")):
     url = "https://" + url
 
 print("\n" + "=" * 50)
-print("🛡️ SCAM LINK CHECKER v11")
+print("🔎 SIYIN SCAM INVESTIGATION\n🔧 Security Analysis Tool v12")
 print("=" * 50)
 
 parsed = urllib.parse.urlparse(url)
@@ -461,7 +461,8 @@ print("\n🛡️ VirusTotal Threat Intelligence:")
 vt_result = virustotal_domain_check(domain)
 
 if vt_result is None:
-    print("⚠️ VT_API_KEY မတွေ့ပါ")
+    print("⚪ VirusTotal: Optional")
+    print("ℹ️ VT_API_KEY မထည့်ထားပါ — VirusTotal စစ်ဆေးမှုကို ကျော်သွားပါမည်")
 elif "error" in vt_result:
     print("⚠️ VirusTotal စစ်ဆေးမှု မအောင်မြင်ပါ")
     print(vt_result["error"])
